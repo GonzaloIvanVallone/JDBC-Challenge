@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${DB}
+    username: ${USER}
+    password: ${PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+JWT_SECRET: ${JWTSECRET}
+JWT_EXPIRES_IN: 90
