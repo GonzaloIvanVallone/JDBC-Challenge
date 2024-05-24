@@ -13,10 +13,11 @@ public class Patient {
     private Long id;
     private String firstName;
     private String lastName;
-    private char gender;
+    private String gender;
     private LocalDate birthDate;
     private String city;
     private String allergies;
     private Integer weight;
     private Integer dni;
+    //age
 }

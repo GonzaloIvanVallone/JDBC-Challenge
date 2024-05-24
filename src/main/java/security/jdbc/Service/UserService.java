@@ -1,4 +1,4 @@
-package security.jdbc.Service;
+/*package security.jdbc.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -44,4 +44,4 @@ public class UserService {
             throw new RuntimeException("Unexpected error while trying to login", e);
         }
     }
-}
+}*/

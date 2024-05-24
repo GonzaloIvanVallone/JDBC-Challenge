@@ -16,8 +16,9 @@ public class PatientRowMapper implements RowMapper<Patient> {
         patient.setAllergies(resultSet.getString("allergies"));
         patient.setCity(resultSet.getString("city"));
         patient.setBirthDate(resultSet.getDate("birth_date").toLocalDate());
-        patient.setGender(resultSet.getString("gender").charAt(0));
+        patient.setGender(resultSet.getString("gender"));
         patient.setWeight(resultSet.getInt("weight"));
+        patient.setDni(resultSet.getInt("dni"));
         return patient;
     }
 }

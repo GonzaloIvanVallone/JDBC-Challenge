@@ -1,4 +1,4 @@
-package security.jdbc.Repository.RowMapper;
+/*package security.jdbc.Repository.RowMapper;
 
 import org.springframework.jdbc.core.RowMapper;
 import security.jdbc.Model.Doctor;
@@ -17,4 +17,4 @@ public class UserRowMapper implements RowMapper<User> {
         user.setPassword(resultSet.getString("password"));
         return user;
     }
-}
+}*/

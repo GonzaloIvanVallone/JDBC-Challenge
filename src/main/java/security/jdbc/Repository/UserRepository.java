@@ -1,4 +1,4 @@
-package security.jdbc.Repository;
+/*package security.jdbc.Repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -41,4 +41,4 @@ public class UserRepository {
     public User getUserByUsername(String username) throws SQLException {
         return jdbcTemplate.queryForObject(GET_BY_USERNAME, new UserRowMapper(),username);
     }
-}
+}*/

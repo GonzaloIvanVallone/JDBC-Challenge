@@ -1,4 +1,4 @@
-package security.jdbc.Controller;
+/*package security.jdbc.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -34,4 +34,4 @@ public class UserController {
             return new ResponseEntity<>("An unexpected error occurred", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-}
+}*/

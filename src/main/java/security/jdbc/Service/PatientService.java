@@ -21,21 +21,21 @@ public class PatientService {
         }
     }
     public Patient getDetails(Long id){
-        try {
+        try{
             return patientRepository.getPatientDetail(id);
         }catch(Exception e){
             throw new FetchFailedException("Error while fetching patient details", e);
         }
     }
     public void createPatient(Patient patient){
-        try {
+        try{
             patientRepository.createPatient(patient);
         }catch(Exception e){
             throw new CreationFailedException("Error while creating patient", e);
         }
     }
     public void updatePatient(Patient patient){
-        try {
+        try{
             patientRepository.updatePatient(patient);
         }catch(Exception e){
             throw new CreationFailedException("Error while updating patient", e);

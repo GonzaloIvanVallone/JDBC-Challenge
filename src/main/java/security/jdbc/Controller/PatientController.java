@@ -23,7 +23,7 @@ public class PatientController {
         }
     }
     @GetMapping("/getDetail/{id}")
-    public ResponseEntity<?> getPatient(@RequestParam("id") Long id ){
+    public ResponseEntity<?> getPatient(@PathVariable("id") Long id ){
         try{
             return new ResponseEntity<>(patientService.getDetails(id), HttpStatus.OK);
         }catch (Exception e){

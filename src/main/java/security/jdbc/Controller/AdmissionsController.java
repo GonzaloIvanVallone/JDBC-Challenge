@@ -46,9 +46,9 @@ public class AdmissionsController {
     public ResponseEntity<?> createAdmission(@RequestBody Admission admission){
         try{
             admissionService.createAdmission(admission);
-            return new ResponseEntity<>("Doctor created", HttpStatus.CREATED);
+            return new ResponseEntity<>("Admission created", HttpStatus.CREATED);
         }catch(CreationFailedException e){
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 }

@@ -1,4 +1,4 @@
-package security.jdbc.Config;
+/*package security.jdbc.Config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,5 +28,5 @@ public class SecurityConfig{
         }).build();
     }
 
-}
+}*/
 //.addFilterBefore(new JwtFilter(), BasicAuthenticationFilter.class)

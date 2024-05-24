@@ -27,7 +27,7 @@ public class DoctorController {
         }
     }
     @GetMapping("/getDetail/{id}")
-    public ResponseEntity<?> getDoctor(@RequestParam("id") Long id ){
+    public ResponseEntity<?> getDoctor(@PathVariable("id") Long id ){
         try{
             return new ResponseEntity<>(doctorService.getDetails(id), HttpStatus.OK);
         }catch(FetchFailedException e){
@@ -53,10 +53,10 @@ public class DoctorController {
         }
     }
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> deleteDoctor(@RequestParam("id") Long id){
+    public ResponseEntity<?> deleteDoctor(@PathVariable("id") Long id){
         try{
             doctorService.deleteDoctor(id);
-            return new ResponseEntity<>("Doctor updated", HttpStatus.OK);
+            return new ResponseEntity<>("Doctor deleted", HttpStatus.OK);
         }catch(DeletionException e){
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
